@@ -5,23 +5,18 @@
 # it by three and add one
 # the program ends if the current value is one.
 
-numbers = []
 
 # first number and then check if it has a positive value
-number = int(input("please enter a number: " ))
 
-while number > 0:
+n = int(input("please enter a number: " ))
+while n > 0:
+    n -= 1
+    if n % 2 == 0:
+        print(n/2)
+    elif n != 0:
+        print((n*3)+1)
+    else:
+         n == 2
 
-for value in numbers:
-    print(value)
-
-# checking if it is an even integer
-
-if number%2:
-    print(({}/2).format(number))
-else:
-    print(({} * 3 )+ 1).format(number)
-
-while number ==1:
-    for value in numbers:
-        print (value)
+    print(n)
+    break
